@@ -1,186 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-    />
-    <title>Web-Studio</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- Шапка сайта-->
-    <header class="header">
-      <nav>
-        <a class="logo-studio-header logo" href=""
-          ><span class="logo-web">WEB</span>STUDIO</a
-        >
-
-        <ul class="navigation">
-          <li><a class="nav-link" href="./index.html">Studio</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-
-      <ul class="contact">
-        <li>
-          <a class="link-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="link-contact" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-      </ul>
-    </header>
-
-    <main>
-      <!-- Меню -->
-      <section>
-        <ul class="filter">
-          <li>
-            <button class="filter-button" type="button">All</button>
-          </li>
-          <li>
-            <button class="filter-button" type="button">Web Site</button>
-          </li>
-          <li><button class="filter-button" type="button">App</button></li>
-          <li><button class="filter-button" type="button">Design</button></li>
-          <li>
-            <button class="filter-button" type="button">Marketing</button>
-          </li>
-        </ul>
-        <!-- Картки -->
-        <h1 class="visually-hidden">Projekt card</h1>
-        <ul class="card">
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/1.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Banking App Interface Concept</h2>
-              <p class="card-text">App</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/2.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-
-              <h2 class="card-title">Cashless Payment</h2>
-              <p class="card-text">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/3.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Meditaion App</h2>
-              <p class="card-text">App</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/4.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Taxi Service</h2>
-              <p class="card-text">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/5.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Screen Illustrations</h2>
-              <p class="card-text">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/6.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Online Courses</h2>
-              <p class="card-text">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/7.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Instagram Stories Concept</h2>
-              <p class="card-text">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/8.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Organic Food</h2>
-              <p class="card-text">Web Site</p></a
-            >
-          </li>
-          <li>
-            <a class="card-link" href="">
-              <img
-                src="./images/9.jpg"
-                alt="image for exemple"
-                height="300"
-                width="360"
-              />
-              <h2 class="card-title">Fresh Coffee</h2>
-              <p class="card-text">Web Site</p></a
-            >
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <!-- Підвал сайту -->
-    <footer class="footer">
-      <a class="logo-studio-footer logo" href=""
-        ><span class="logo-web">WEB</span>STUDIO</a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
-  </body>
-</html>
+:root {
+    --title-text-color: #2e2f42;
+    --primary-text-color: #434455;
+    --secondary-text-color: #ffffff;
+    --footer-text-color: #e7e9fc;
+    --exception-color: #f4f4fd;
+    --accent-color: #4d5ae5;
+  }
+  
+  /* sections of pages and main characteristics */
+  
+  body {
+    color: var(--title-text-color);
+    background-color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+  
+  .header {
+    background-color: var(--secondary-text-color);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  
+  /* Logo */
+  
+  .logo {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  
+  .logo-web {
+    color: var(--accent-color);
+  }
+  
+  .logo-studio-header {
+    color: var(--title-text-color);
+  }
+  
+  .logo-studio-footer {
+    color: var(--exception-color);
+  }
+  
+  /* Nav */
+  
+  .nav-link {
+    text-decoration: none;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .link-nav:hover,
+  .link-nav:focus {
+    color: var(--primary-text-color);
+  }
+  
+  .link-nav:active {
+    color: var(--accent-color);
+  }
+  
+  .link-contact {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .link-contact:hover,
+  .link-contact:focus {
+    color: var(--accent-color);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--title-text-color);
+  }
+  
+  .footer-text {
+    color: var(--footer-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* PRIMARY PAGE */
+  
+  /* Hero */
+  
+  .hero {
+    background-color: var(--title-text-color);
+  }
+  
+  .hero-title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+  }
+  
+  .hero-button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+  }
+  
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .hero-button:active {
+    background-color: #404bbf;
+  }
+  
+  /* About Company */
+  
+  .about-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .about-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* What are we doing */
+  
+  .benefits-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+  
+  /* Our Team */
+  
+  .team {
+    background-color: var(--exception-color);
+  }
+  
+  .team-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+  
+  .team-list {
+    background-color: var(--secondary-text-color);
+  }
+  
+  .team-subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .team-desk {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* PORTFOLIO */
+  
+  /* Menu */
+  
+  .filter-button {
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: var(--exception-color);
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+  
+  .filter-button:hover,
+  .filter-button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+  }
+  
+  /* Card */
+  
+  .card-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .card-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .card-link {
+    text-decoration: none;
+  }
